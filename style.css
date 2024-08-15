@@ -100,7 +100,6 @@ section#home button {
   position: relative;
   overflow: hidden; /* Hide overflow by default */
   border: 1px solid #ddd; /* Optional: border for the card */
-  background-color: #088f8f;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: box shadow for a card effect */
   border-radius: 20px;
   margin-left: 3rem;
@@ -124,7 +123,6 @@ section#home button {
 
 .char-card:hover {
   overflow: visible; /* Allow overflow when hovering over the card */
-  cursor: pointer;
 }
 
 .char-card:hover .image-container img {
@@ -132,4 +130,44 @@ section#home button {
   top: 50%;
   left: 50%;
   z-index: 10; /* Ensure the image appears above other content */
+}
+
+/*Char Card BG*/
+/* Target the first character card */
+.char-card:nth-child(1) {
+  background-image: url("images/anemoBG.png");
+  background-position: center;
+}
+
+/* Target the second character card */
+.char-card:nth-child(2) {
+  background-image: url("images/anemoBG.png");
+  background-position: center;
+}
+/* Target the second character card */
+.char-card:nth-child(2) img:hover {
+  width: 15rem;
+}
+
+/* Target the third character card */
+.char-card:nth-child(3) {
+  background-image: url("images/hydroBG.png");
+  background-position: center;
+}
+.char-card:nth-child(3) img {
+  width: 25rem;
+}
+.char-card:nth-child(3) img:hover {
+  width: 25rem;
+}
+.char-card:nth-child(4) {
+  background-image: url("images/pyroBG.png");
+  background-position: center;
+}
+.char-card:nth-child(4) img:hover {
+  width: 25rem;
+}
+.char-card:nth-child(5) {
+  background-image: url("images/anemoBG.png");
+  background-position: center;
 }
