@@ -1,0 +1,135 @@
+body {
+  background-color: black;
+}
+body,
+html {
+  height: 100%;
+}
+* {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+}
+
+/*Navigation*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  position: fixed;
+}
+.navLeft img {
+  display: block;
+  height: 5rem;
+  margin-left: 1rem;
+}
+.navRight {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 70rem;
+}
+.navRight a {
+  text-decoration: none;
+  text-align: center;
+  margin-left: 2rem;
+  padding: 5px 5px 5px 5px;
+}
+
+/*Section*/
+section {
+  height: 100%;
+  width: 100%;
+}
+
+/*Header*/
+.sectionHeader {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px rgb(124, 124, 124) solid;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+/*Section Home*/
+section#home {
+  background-image: url("images/home.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1s ease-in-out;
+}
+.home-content {
+  margin: auto;
+}
+.home-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.home-intro {
+  text-align: center;
+  font-size: 2rem;
+}
+section#home button {
+  background-color: rgb(255, 211, 65);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 47%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/*Section Character*/
+.character-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.char-card {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  overflow: hidden; /* Hide overflow by default */
+  border: 1px solid #ddd; /* Optional: border for the card */
+  background-color: #088f8f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: box shadow for a card effect */
+  border-radius: 20px;
+  margin-left: 3rem;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+.char-card:hover {
+  overflow: visible; /* Allow overflow when hovering over the card */
+  cursor: pointer;
+}
+
+.char-card:hover .image-container img {
+  transform: translate(-50%, -50%) scale(1.5); /* Move the image and scale it up */
+  top: 50%;
+  left: 50%;
+  z-index: 10; /* Ensure the image appears above other content */
+}
