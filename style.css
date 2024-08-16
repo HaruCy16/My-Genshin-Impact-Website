@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  cursor: url("images/genshinMouse.png"), auto;
 }
 body,
 html {
@@ -32,6 +33,7 @@ html {
   text-align: center;
   margin-left: 2rem;
   padding: 5px 5px 5px 5px;
+  cursor: url("images/genshinMouse.png"), auto;
 }
 
 /*Section*/
@@ -83,10 +85,15 @@ section#home button {
   margin: 4px 2px;
   margin-left: 47%;
   border-radius: 1rem;
-  cursor: pointer;
+  cursor: url("images/genshinMouse.png"), auto;
 }
 
 /*Section Character*/
+section#characters {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .character-content {
   display: flex;
   flex-direction: row;
