@@ -118,8 +118,29 @@ section#characters {
   width: 100%;
   height: 100%;
   position: relative;
+  display: inline-block;
 }
 
+/*Character Description*/
+.image-info {
+  display: none; /* Hidden by default */
+  position: absolute;
+  bottom: 10px; /* Position it at the bottom of the image */
+  left: 10px; /* Position it from the left */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1000; /* Make sure it appears above other content */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+.char-name {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.char-description {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 .image-container img {
   width: 100%;
   height: auto;
@@ -167,7 +188,7 @@ section#characters {
   width: 25rem;
 }
 .char-card:nth-child(3) img:hover {
-  width: 25rem;
+  width: 28rem;
 }
 .char-card:nth-child(4) {
   background-image: url("images/pyroBG.png");
