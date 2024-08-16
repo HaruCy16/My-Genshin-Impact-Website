@@ -17,6 +17,7 @@ html {
   flex-direction: row;
   height: 5rem;
   position: fixed;
+  z-index: 11;
 }
 .navLeft img {
   display: block;
@@ -90,6 +91,7 @@ section#home button {
 
 /*Section Character*/
 section#characters {
+  background-image: url("images/characterDefaultBG.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

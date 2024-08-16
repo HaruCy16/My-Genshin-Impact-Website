@@ -30,10 +30,12 @@ setInterval(changeBackgroundImage, 3000);
 
 changeBackgroundImage();
 
+/*Change Backround feature Char Section*/
+
 /*Character Section BG Variable Declaration*/
 const characterBackground = document.getElementById("characters");
 
-/*Change image when hover Xiao*/
+/*Xiao*/
 const xiaoHover = document.getElementById("xiaoImageCard");
 
 xiaoHover.addEventListener("mouseover", () => {
@@ -47,7 +49,7 @@ kazuhaHover.addEventListener("mouseover", () => {
   characterBackground.style.backgroundImage = `url(images/home.gif)`;
 });
 
-/*Change image when hover Childe*/
+/*Childe*/
 const childeHover = document.getElementById("childeImageCard");
 
 childeHover.addEventListener("mouseover", () => {
@@ -59,7 +61,7 @@ childeHover.addEventListener("mouseout", () => {
   childeHover.src = "images/childeCard.png";
 });
 
-/*Change image when hover Diluc*/
+/*Diluc*/
 const dilucHover = document.getElementById("dilucImageCard");
 
 dilucHover.addEventListener("mouseover", () => {
@@ -76,4 +78,13 @@ const scaraHover = document.getElementById("scaraImageCard");
 
 scaraHover.addEventListener("mouseover", () => {
   characterBackground.style.backgroundImage = `url(images/charScara.gif)`;
+});
+
+/*Back BG to default when Mouseout*/
+const defaultBG = document.querySelectorAll(".image-container");
+
+defaultBG.forEach((element) => {
+  element.addEventListener("mouseout", () => {
+    characterBackground.style.backgroundImage = `url(images/characterDefaultBG.gif)`;
+  });
 });
