@@ -7,8 +7,9 @@ html {
   height: 100%;
 }
 * {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*Navigation*/
@@ -35,6 +36,7 @@ html {
   margin-left: 2rem;
   padding: 5px 5px 5px 5px;
   cursor: url("images/genshinMouse.png"), auto;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 /*Section*/
@@ -52,6 +54,7 @@ section {
   border-bottom: 1px rgb(124, 124, 124) solid;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 /*Section Home*/
@@ -134,10 +137,6 @@ section#characters {
   z-index: 1000; /* Make sure it appears above other content */
   transition: opacity 0.3s ease; /* Smooth transition */
 }
-.char-name {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
 .char-description {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -200,4 +199,150 @@ section#characters {
 .char-card:nth-child(5) {
   background-image: url("images/anemoBG.png");
   background-position: center;
+}
+
+/*Section Account*/
+section#account {
+  background-image: url("images/accountBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.account-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.2rem;
+}
+.main-information {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: rgba(87, 87, 87, 0.63);
+  border-radius: 1rem;
+  height: 48rem;
+}
+
+/*Main Information Header*/
+.mainAcc-header {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1rem;
+  border-bottom: 1px white solid;
+}
+.mainAcc-header img {
+  border-radius: 50%;
+  height: 10rem;
+  background-color: rgb(19, 139, 109);
+}
+.mainAcc-header .acc-stats {
+  margin-left: 1.5rem;
+}
+
+/*Main Information Body*/
+.mainAcc-body {
+  padding: 0.2rem 1rem 1rem 1rem;
+  margin-top: 0.75rem;
+  border-radius: 1rem;
+  height: 70%;
+  background-color: rgba(141, 141, 141, 0.63);
+}
+.mainAcc-body h1 {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px white solid;
+}
+.mainAcc-body img {
+  height: 1.5rem;
+}
+
+/*Sub Information*/
+.sub-information {
+  display: flex;
+  flex-direction: column;
+}
+/*Info Box Style*/
+.subInfo-box {
+  width: 80rem;
+  height: 10rem;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+}
+.subInfo-box h1 {
+  text-align: center;
+
+  border-bottom: 1px white solid;
+  padding-bottom: 0.5rem;
+}
+
+/*Serenitea Pot Box Style*/
+#sereniteaPot {
+  background-image: url("images/sereniteaPot.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.subInfo-sereniteaPot {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: rgba(0, 0, 255, 0.562);
+}
+.subInfo-sereniteaPot p {
+  margin-left: 7rem;
+}
+
+/*World Exploration Box Style*/
+#worldExploration {
+  background-image: url("images/worldExplo.png");
+  background-size: cover;
+  background-position: center;
+  height: 33rem;
+}
+.explo-body {
+  display: flex;
+  flex-direction: row;
+}
+.explo-box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  background-color: #808080c2;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 1rem;
+}
+.explo-box img {
+  height: 8rem;
+}
+.statistics {
+  width: 10rem;
+}
+
+/*Explo Progress Bar*/
+.progress-bar {
+  width: 100%;
+  background-color: #bebebe;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.progress {
+  width: 50%;
+  height: 10px;
+  background-color: #c0a821;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px 0 0 25px;
+}
+
+/*rwo 2 and 3 margins*/
+.row-2 {
+  margin-left: 12rem;
+}
+.row-3 {
+  margin-left: 12rem;
+}
+/*Chasm h2 Adjust*/
+#chasm h2 {
+  font-size: 18px;
 }
