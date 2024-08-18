@@ -41,14 +41,14 @@ const xiaoDsc = document.getElementById("xiaoInfo");
 
 xiaoHover.addEventListener("mouseover", () => {
   characterBackground.style.backgroundImage = `url(images/charXiao.gif)`;
-  xiaoDsc.style.display = "block"; // Show the information
-  xiaoDsc.style.opacity = "1"; // Make it fully visible
+  xiaoDsc.style.display = "block";
+  xiaoDsc.style.opacity = "1";
 });
 
 xiaoHover.addEventListener("mouseout", () => {
-  xiaoDsc.style.opacity = "0"; // Start to hide the information
+  xiaoDsc.style.opacity = "0";
   setTimeout(function () {
-    xiaoDsc.style.display = "none"; // Hide completely after the fade-out effect
+    xiaoDsc.style.display = "none";
   }, 300);
 });
 

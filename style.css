@@ -212,6 +212,8 @@ section#account {
   flex-direction: row;
   margin-top: 1.2rem;
 }
+
+/*Main Information*/
 .main-information {
   margin-right: 2rem;
   margin-bottom: 1rem;
@@ -244,7 +246,7 @@ section#account {
   margin-top: 0.75rem;
   border-radius: 1rem;
   height: 70%;
-  background-color: rgba(141, 141, 141, 0.63);
+  background-color: rgba(177, 148, 19, 0.63);
 }
 .mainAcc-body h1 {
   padding-bottom: 0.75rem;
@@ -258,6 +260,7 @@ section#account {
 .sub-information {
   display: flex;
   flex-direction: column;
+  height: 48rem;
 }
 /*Info Box Style*/
 .subInfo-box {
