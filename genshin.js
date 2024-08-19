@@ -9,6 +9,24 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+/*Nav auto hide when scroll*/
+let lastScrollTop = 0;
+const nav = document.querySelector(".nav");
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down
+    nav.style.top = "-100px";
+  } else {
+    // Scrolling up
+    nav.style.top = "0";
+  }
+
+  lastScrollTop = scrollTop;
+});
+
 /*Explore button*/
 document.getElementById("explore").addEventListener("click", () => {
   document.getElementById("characters").scrollIntoView({ behavior: "smooth" });

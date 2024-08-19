@@ -19,6 +19,7 @@ html {
   height: 5rem;
   position: fixed;
   z-index: 11;
+  transition: top 0.3s;
 }
 .navLeft img {
   display: block;
@@ -348,4 +349,173 @@ section#account {
 /*Chasm h2 Adjust*/
 #chasm h2 {
   font-size: 18px;
+}
+
+/* General Responsiveness */
+@media (max-width: 768px) {
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
+
+  section#home {
+    background-position: center;
+  }
+
+  section#characters {
+    height: auto;
+  }
+
+  section#account {
+    height: auto;
+    background-color: rgb(65, 68, 18);
+    background-image: none;
+  }
+
+  .sectionHeader {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .char-description {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .mainAcc-body,
+  .subInfo-box {
+    padding: 1rem;
+  }
+
+  .subInfo-header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Navigation: Responsive Adjustments */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .navLeft img {
+    height: 3rem;
+    margin-left: 0;
+  }
+
+  .navRight {
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
+
+  .navRight a {
+    margin-left: 1rem;
+  }
+}
+
+/* Home Section: Responsive Adjustments */
+@media (max-width: 768px) {
+  .home-content {
+    padding-top: 10rem;
+  }
+  .home-logo img {
+    width: 60%;
+  }
+
+  section#home button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .home-intro {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Character Section: Responsive Adjustments */
+@media (max-width: 1024px) {
+  .character-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .char-card {
+    width: 90%;
+    margin: 1rem 0;
+  }
+}
+
+/* Account Section: Responsive Adjustments */
+@media (max-width: 1024px) {
+  .account-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .main-information,
+  .sub-information {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
+  }
+
+  .sub-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subInfo-box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .subInfo-sereniteaPot p {
+    width: 10rem;
+    margin-left: 4rem;
+  }
+
+  .subInfo-sereniteaPot {
+    height: 6rem;
+    overflow-x: scroll; /* Add this property */
+    -webkit-overflow-scrolling: touch; /* Add this property for smooth scrolling on iOS */
+  }
+  .subInfo-sereniteaPot::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .explo-body {
+    overflow-x: scroll; /* Add this property */
+    -webkit-overflow-scrolling: touch; /* Add this property for smooth scrolling on iOS */
+  }
+  .explo-body::-webkit-scrollbar {
+    width: inherit;
+    background: transparent;
+  }
+  .explo-body .row-1,
+  .explo-body .row-2,
+  .explo-body .row-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explo-box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
