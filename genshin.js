@@ -16,11 +16,13 @@ const nav = document.querySelector(".nav");
 window.addEventListener("scroll", function () {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-  if (scrollTop > lastScrollTop) {
-    // Scrolling down
-    nav.style.top = "-100px";
+  if (this.window.innerWidth <= 768) {
+    if (scrollTop > lastScrollTop) {
+      nav.style.top = "-100px";
+    } else {
+      nav.style.top = "0";
+    }
   } else {
-    // Scrolling up
     nav.style.top = "0";
   }
 
